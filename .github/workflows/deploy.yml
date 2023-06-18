@@ -21,4 +21,4 @@ jobs:
         angular_project_dir: angular-course
 
 permissions:
-  contents: writ
+  contents: write # Allow write permission to GITHUB_TOKEN to commit to deploy branch.
