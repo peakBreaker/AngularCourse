@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { bingoData } from '@models/bingoData';
 
 @Component({
   selector: 'app-root',

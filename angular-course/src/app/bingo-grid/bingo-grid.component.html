@@ -1,0 +1,8 @@
+<div class="grid-container">
+  <div *ngFor="let row of bingoData" class="row">
+    <div *ngFor="let item of row" class="cell">
+      {{ item.Entry }} (Difficulty: {{ item.difficulty }})
+      <input type="checkbox">
+    </div>
+  </div>
+</div>
