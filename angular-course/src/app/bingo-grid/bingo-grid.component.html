@@ -1,3 +1,11 @@
+<h1 class="retro-title">Super bingo!</h1>
+
+<div class="input-container">
+  <label for="manual-seed" class="retro-text">Manual Seed:</label>
+  <input type="text" id="manual-seed" class="retro-input" (input)="onManualSeedChange($event)">
+  <button class="retro-button" (click)="updateManualSeed()">Update</button>
+</div>
+
 <div class="grid-container">
   <div *ngFor="let row of bingoData" class="row">
     <div *ngFor="let item of row" class="cell">

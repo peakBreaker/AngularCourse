@@ -11,17 +11,84 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
 }
 
 .cell {
-  border: 1px solid #ccc;
+  border: 1px solid #ff4500;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   overflow: auto;
-  height:100%
+  height:100%;
+  overflow-x: hidden;
+  max-width: 33vw;
+  background: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  font-family: 'Courier New', Courier, monospace;
+  max-height: 25vh;
+  color: #ff4500;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: sticky;
+  margin: 0 auto;
+  top: 0;
+  background: #fafafa;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* You can customize your button and input field here */
+.input-container input {
+  /* Input styling */
+}
+
+.input-container button {
+  /* Button styling */
+}
+.retro-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff4500;
+}
+
+.retro-input {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff4500;
+  background: #fff;
+  border: 1px solid #ff4500;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.retro-button {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  background: #ff4500;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.retro-button:hover {
+  background: #ff5500;
+}
+.retro-title {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace; /* This is a commonly used retro style font */
+  color: #ff4500; /* Choose the color you like */
+  text-shadow: 3px 3px #000; /* Gives a little shadow to the text for a 3D effect */
+  font-size: 2.5em;
+  padding: 8px;
+  margin:0;
 }

@@ -9,9 +9,23 @@ import { EntryData, bingoData } from '@models/bingoData'
 export class BingoGridComponent implements OnInit {
   bingoData: EntryData[][] = [];
   randomMiddleEntry: EntryData | undefined;
+  manualSeed = 0;
+  inputSeed = 0;
 
-  ngOnInit() {
-    const seed = new Date().getDate();
+  onManualSeedChange(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.inputSeed = Number(inputElement.value);
+  }
+
+  updateManualSeed() {
+    this.manualSeed = this.inputSeed;
+    this.updateGrid()
+  }
+
+
+  updateGrid() {
+    console.log('Updating grid!')
+    const seed = new Date().getDate() + this.manualSeed;
     const random = this.seedableRandom(seed);
     const filteredData = bingoData.filter(item => item.difficulty === 1);
 
@@ -45,5 +59,8 @@ export class BingoGridComponent implements OnInit {
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+  }
+  ngOnInit(): void {
+    this.updateGrid();
   }
 }
