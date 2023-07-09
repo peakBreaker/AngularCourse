@@ -5,11 +5,18 @@ export interface EntryData {
 
 
 export const bingoData: EntryData[] = [
+
+  { Entry: 'Barnevogn', difficulty: 2 },
+  { Entry: 'Sykkel', difficulty: 2 },
+  { Entry: 'Folk med headset', difficulty: 2 },
+  { Entry: 'Helikopter', difficulty: 3 },
+  { Entry: 'Folk som prater', difficulty: 2 },
+
   { Entry: 'Hund på tur', difficulty: 1 },
   { Entry: 'Katt', difficulty: 3 },
   { Entry: 'Flaggermus', difficulty: 2 },
   { Entry: 'Måke', difficulty: 1 },
-  { Entry: 'Fyr i baris', difficulty: 2.5 },
+  { Entry: 'Baris', difficulty: 2.5 },
   { Entry: 'Shit kids', difficulty: 2.5 },
   { Entry: 'Da/Ai', difficulty: 2.5 },
   { Entry: 'Sirene forbi', difficulty: 2 },
@@ -18,10 +25,9 @@ export const bingoData: EntryData[] = [
   { Entry: 'Vindu åpnes', difficulty: 1 },
   { Entry: 'Bi*** i vindu', difficulty: 3 },
   { Entry: 'Nabo duolingo', difficulty: 3 },
-  { Entry: 'Monstera i vindu', difficulty: 2.5 },
   { Entry: 'Turist Asian', difficulty: 2.5 },
   { Entry: 'Løp til buss/tog', difficulty: 2.5 },
-  { Entry: 'Røyker', difficulty: 1 },
+  { Entry: 'Røyker', difficulty: 1.5 },
   { Entry: 'Farga lys', difficulty: 2 },
   { Entry: 'Post / søppel', difficulty: 2.5 },
   { Entry: 'Folk på terrasse', difficulty: 1 },
@@ -30,7 +36,7 @@ export const bingoData: EntryData[] = [
   { Entry: 'TV på hos nabo', difficulty: 1 },
   { Entry: 'Vi blir sett', difficulty: 3 },
   { Entry: 'Skatebord / rulleskøyter / sparkesykkel', difficulty: 2 },
-  { Entry: 'Person på gangbro', difficulty: 1 },
+  { Entry: 'Person på gangbro', difficulty: 2 },
   { Entry: 'Gruppe (3 eller flere)', difficulty: 2.5 },
   { Entry: 'Stor koffert', difficulty: 3 },
   { Entry: 'Begge Inngangsporter brukes', difficulty: 2 },
